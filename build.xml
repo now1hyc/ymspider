@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="naviCrawl-svn" default="build" basedir=".">
+	<property file="${basedir}/default.properties" />
+
+	<path id="service.classpath">
+		<fileset dir="${lib.dir}/" includes="*.jar" />
+	</path>
+
+	<target name="prepare">
+		<mkdir dir="${build.class.dir}" />
+	</target>
+	<target name="clean">
+		<delete dir="${build.class.dir}" />
+	</target>
+
+	<target name="build" depends="clean,prepare" description="编译代码">
+		<javac srcdir="${src.dir}" destdir="${build.class.dir}" debug="true" encoding="UTF8">
+			<classpath refid="service.classpath">
+			</classpath>
+
+		</javac>
+		<copy todir="${build.class.dir}" verbose="true">
+			<fileset dir="${config.dir}" includes="log4j.properties" />
+			<fileset dir="${config.dir}" includes="hbase-site.xml" />
+		</copy>
+	</target>
+
+	<target name="war" depends="build">
+		<war destfile="${build.dir}/naviCrawl.war" webxml="${web.dir}/web.xml">
+			<lib dir="${lib.dir}">
+				<include name="**/*.jar" />
+				<exclude name="servlet-api.jar" />
+			</lib>
+			<fileset dir="${webRoot.dir}">
+				<include name="WEB-INF/classes/" />
+			</fileset>
+
+		</war>
+	
+	</target>
+</project>

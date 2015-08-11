@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<item id="0">
+		<host>jd.com;m.jd.com;item.jd.com;e.m.jd.com;caipiao.m.jd.com</host>
+		<name>京东商城</name>
+		<code>1005</code>
+		<url_charset>gb2312</url_charset>
+		<content_charset>gb2312</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.Parser360BuyNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.jd.com/" template</description>
+	</item>
+	
+	<item id="1">
+		<domain>www.amazon.cn;z.cn</domain>
+		<name>亚马逊</name>
+		<code>1011</code>
+		<url_charset>utf-8</url_charset>
+		<content_charset>gb2312</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParserAmazonNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "www.amazon.cn" template</description>
+	</item>
+	
+	<item id="2">
+		<domain>m.yixun.com;m.51buy.com;app.yixun.com;mb.51buy.com;item.yixun.com</domain>
+		<name>易迅网</name>
+		<code>1009</code>
+		<url_charset>utf-8</url_charset>
+		<content_charset>utf-8</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.Parser51buyNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.yixun.com/t/" template</description>
+	</item>
+	
+	<item id="3">
+		<domain>m.yhd.com;item.yhd.com;www.yhd.com</domain>
+		<name>一号店</name>
+		<code>1012</code>
+		<url_charset>utf-8</url_charset>
+		<content_charset>utf-8</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParserYihaodianNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.yhd.com/2/" template
+		</description>
+	</item>
+	
+	<item id="4">
+		<domain>m.suning.com;qiang.suning.com;www.suning.com;product.suning.com</domain>
+		<name>苏宁易购</name>
+		<code>1001</code>
+		<url_charset>utf-8</url_charset>
+		<content_charset>utf-8</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParserSuningNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.suning.com/" template</description>
+	</item>
+	
+	<item id="5">
+		<host>m.dangdang.com;product.dangdang.com;p.yiqifa.com</host>
+		<name>当当网</name>
+		<code>1008</code>
+		<url_charset>gbk</url_charset>
+		<content_charset>gbk</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParserDangDangNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.dangdang.com" template</description>
+	</item>
+	
+	<item id="6">
+		<domain>m.lefeng.com;product.lefeng.com</domain>
+		<name>乐蜂网</name>
+		<code>1030</code>
+		<url_charset>utf-8</url_charset>
+		<content_charset>utf-8</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParserLeFengNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.lefeng.com/" template</description>
+	</item>
+	
+	<item id="7">
+		<domain>m.vip.com;www.vip.com</domain>
+		<name>唯品会</name>
+		<code>1071</code>
+		<url_charset>utf-8</url_charset>
+		<content_charset>utf-8</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParserVipShopNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.vip.com/all.html" template </description>
+	</item>
+	
+	<item id="8">
+		<domain>m.newegg.cn;www.newegg.cn</domain>
+		<name>新蛋中国</name>
+		<code>1007</code>
+		<url_charset>gb2312</url_charset>
+		<content_charset>gb2312</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParserNewEggNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "http://m.newegg.cn//" template</description>
+	</item>
+	
+	<item id="9">
+		<domain>m.jumei.com;mall.jumei.com;bj.jumei.com</domain>
+		<name>聚美优品</name>
+		<code>1031</code>
+		<url_charset>utf-8</url_charset>
+		<content_charset>utf-8</content_charset>
+		<parserImpl>com.xm99.nutch.plugin.parse.ParseJuMeiNew</parserImpl>
+		<mparas>DocumentFragment</mparas>
+		<isUse>1</isUse>
+		<description>to get "mall.jumei.com" template</description>
+	</item>
+</root>

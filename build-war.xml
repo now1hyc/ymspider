@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="naviCrawl" default="war" basedir=".">
+	
+	<property name="webRoot.dir" value="WebRoot" />
+	<property name="web.dir" value="${webRoot.dir}/WEB-INF" />
+	<property name="classes.dir" value="${web.dir}/classes" />
+	<property name="lib.dir" value="${web.dir}/lib" />	
+	<path id="service.classpath">
+		<fileset dir="${lib.dir}/" includes="*.jar" />
+	</path>
+	 <target name="war" >
+		<war destfile="naviCrawl.war" webxml="${web.dir}/web.xml">
+			<lib dir="${lib.dir}" >
+	            <include name="**/*.jar" />
+				<exclude name="servlet-api.jar"/>
+			</lib>
+			<fileset dir="${webRoot.dir}">
+				 <include name="WEB-INF/classes/" />
+				 <include name="WEB-INF/jboss-web.xml" />
+				 <include name="WEB-INF/dispatcherServlet-servlet.xml" />
+			</fileset>
+		</war>
+	  </target>
+</project>
